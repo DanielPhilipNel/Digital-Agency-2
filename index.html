@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+  <title>Digital Agency Email Template</title>
+  <style>
+    /* CSS Reset */
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    li,
+    table,
+    td,
+    tr,
+    th,
+    img {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: none;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    /* navbar */
+
+    nav {
+      background-color: #f1f1f1;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      align-items: center;
+    }
+
+    .table-top {
+      background-color: #f5f5f5;
+    }
+
+    nav li a:hover {
+      background-color: #ddd;
+    }
+
+    /* Footer */
+
+    .table-bottom {
+      background-color: #f2f2f2;
+      position: relative;
+
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      color: #999999;
+      font-size: 14px;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      left: 100px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .col-md-6 {
+      width: 50%;
+      padding: 0 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #999999;
+      text-decoration: none;
+    }
+
+    i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 767px) {
+      .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+
+
+    /* digital marketing images */
+
+    .seo {
+      position: relative;
+      right: 180px;
+      top: 90px;
+    }
+
+    .google {
+      position: relative;
+    }
+
+    .social {
+      position: relative;
+      left: 170px;
+      bottom: 100px;
+    }
+
+    .street {
+      position: relative;
+      right: 10px;
+    }
+
+    .gmail {
+      position: relative;
+      right: 180px;
+      bottom: 120px;
+    }
+
+    .display {
+      position: relative;
+      left: 180px;
+      bottom: 220px;
+    }
+
+    .card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      margin: 50px;
+      position: relative;
+      top: 4px;
+      left: 50px;
+    }
+
+    .card img {
+      width: 10%;
+      border-radius: 5px;
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin: 16px 0;
+    }
+
+    .card p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .card a {
+      display: block;
+      text-align: center;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      background-color: #0069d9;
+    }
+
+     .card-background {
+         background-color: #f5f5f5;
+     }
+
+    /* facts */
+
+    .clients {
+      margin: 10px;
+      position: relative;
+      right: 200px;
+      top: 55px;
+    }
+
+    .expirience {
+      position: relative;
+      right: 80px;
+    }
+
+    .members {
+      position: relative;
+      left: 50px;
+      bottom: 50px;
+    }
+
+    .awwards {
+      position: relative;
+      left: 170px;
+      bottom: 97px;
+    }
+
+    .social-media {
+      margin: 20px 10px;
+      padding: 10px;
+    }
+
+    #digital-marketing {
+       background-color: #f5f5f5;
+    }
+
+
+
+    /* Email-specific styles */
+    table {
+      width: 100%;
+      max-width: 600px;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    /* Images */
+    img {
+      max-width: 100%;
+      height: auto;
+
+
+      .accounting {
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+        padding: 8%;
+      }
+
+      .financial {
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+        padding: 8%;
+      }
+
+
+
+      /* social-media links */
+
+      .social-media {
+        padding: 10px;
+
+      }
+
+
+      .paragraph {
+        padding: 2% 0;
+      }
+
+      .heading {
+        padding: 10% 0;
+      }
+
+      .top-container .paragraph-1 {
+        height: 300px;
+        width: 300px;
+        border-radius: 50px;
+        background-color: lightblue;
+      }
+
+
+      .digital-agency-text {
+        position: relative;
+        bottom: 220px;
+        left: 145px;
+      }
+
+      .dummy-text {
+        position: relative;
+        bottom: 220px;
+        left: 150px;
+        padding: 30px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        position: relative;
+        bottom: 220px;
+        left: 150px;
+      }
+
+
+      /* Header */
+      .header {
+        background-color: #f5f5f5;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+      }
+
+
+      /* Body */
+      .body {
+        background-color: #CBE4DE;
+        padding: 20px;
+
+      }
+
+      .body p {
+        margin-bottom: 20px;
+      }
+
+      /* Button */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+
+      }
+
+
+
+
+      /* Responsive styles */
+    
+
+        /* Adjust table widths */
+
+
+
+
+        /* Adjust header */
+        .header {
+          padding: 10px;
+
+        }
+
+        .header h1 {
+          font-size: 20px;
+        }
+
+        /* Adjust body */
+        .body {
+          padding: 10px;
+        }
+      }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr class="table-top">
+      <td class="header">
+        <h1>New Generation Digital Company</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="body">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images/main.jpg" alt="main-img">
+
+        <h1>We Create Unique Experiences</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Porttitor massa id</p>
+      </td>
+    </tr>
+    <tr>
+      <td id="digital-marketing">
+        <h1>Our Digital Marketing Services</h1>
+        <p class="main-text">Digital Marketing Agency , offers a full suit of services- everything from industry - Leading<br> Google
+          Ads , SEO and social media marketing, to cutting-edge design</p>
+        <div class="seo">
+          <img src="images/seo.png" alt="seo-img">
+          <h3>SEO</h3>
+        </div>
+        <div class="google">
+          <img src="images/google ads.png" alt="google-img">
+          <h3>Google Ads</h3>
+        </div>
+        <div class="social">
+          <img src="images/social-media.png" alt="social-media-img">
+          <h3>Social Media<br>Marketing</h3>
+        </div>
+        <div class="street">
+          <img src="images/street-view.png" alt="street-view-img">
+          <h3>Google Street<br>View</h3>
+        </div>
+        <div class="gmail">
+          <img src="images/gmail ads.png" alt="gmail-ads-img">
+          <h3>Gmail Ads</h3>
+        </div>
+        <div class="display">
+          <img src="images/display ads.png" alt="display-img">
+          <h3>Google Display<br>Ads</h3>
+        </div>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <h1 class="card-client">What Our Clients Say</h1>
+        <div class="card">
+          <img src="images/user.png" alt="Card Image">
+          <h2>Stephan Hackner</h2>
+          <p>Highly Recommended. they really know<br>what they are doing.</p>
+
+        </div>
+        <div class="card">
+          <img src="images/man.png" alt="Card Image">
+          <h2>Daniel Shapiro</h2>
+          <p>Josh and his team<br>are extremely professional.</p>
+
+        </div>
+        <div class="card">
+          <img src="images/girl.png" alt="Card Image">
+          <h2>Louise Hameiton</h2>
+          <p>Excellent Adwords company! Has<br>transformed my business.</p>
+
+        </div>
+      </td>
+    </tr>
+    <tr class="card-background">
+      <td class="card-color">
+        <div class="card">
+          <h2>Professional Plan</h2>
+          <p>$199</p>
+          <p>per month</p>
+          <p>responsive</p>
+          <p>live streaming</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="card">
+          <h2>Business Plan</h2>
+          <p>$299</p>
+          <p>per month</p>
+          <p>responsive</p>
+          <p>live straming</p>
+          <p>adaptive bitrate</p>
+          <p>analysis</p>
+          <a href="#">Read More</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h1>Facts For Chooseing Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <div class="clients">
+          <h1>52+</h1>
+          <p>CLIENTS</p>
+        </div>
+        <div class="expirience">
+          <h1>700+</h1>
+          <p>EXPIRIENCE</p>
+        </div>
+        <div class="members">
+          <h1>50+</h1>
+          <p>MEMBERS</p>
+        </div>
+        <div class="awwards">
+          <h1>200+</h1>
+          AWWARDS
+        </div>
+      </td>
+    </tr>
+
+    <tr class="table-bottom">
+      <td>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>New Generation Digital Company</p>
+                <p>45 Adderley Street</p>
+                <p>Cape Town South Africa</p>
+              </div>
+              <div class="col-md-6">
+                <ul class="footer-links">
+                  <li class="info"><a href="#">Terms of Service</a></li>
+                  <li class="info"><a href="#">Privacy Policy</a></li>
+                  <li class="info"><a href="#">Unsubscribe</a></li>
+                  <a class="social-media" href="#"><img src="images/facebook.png" alt="facebook-img"></a>
+                  <a class="social-media" href="#"><img src="images/instagram.png" alt="instagram-img"></a>
+                  <a class="social-media" href="#"><img src="images/linkedin.png" alt="instagram-img"></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
